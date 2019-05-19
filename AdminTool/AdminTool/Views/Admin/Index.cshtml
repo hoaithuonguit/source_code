@@ -1,0 +1,73 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<h4 class="text-center">Danh sách người dùng</h4>
+
+<div class="text-center search-box" onchange="">
+    <input class="text-search" type="text" placeholder="Tìm tên người dùng..." name="search"
+           onfocus="clearData(this)" />
+    <button class="fa fa-search" id="search-data"></button>
+
+    <input id="path-all-user" type="hidden" value="/AdminApi/ListAllUser" />
+</div>
+<div class="search-condition">
+    <div class="nav-search-condition">
+        <a>
+            <span>Tìm kiếm nâng cao</span>
+            <i class="fas fa-arrow-alt-circle-down"></i>
+        </a>
+    </div>
+    <div class="search-condition-detail hidden">
+        <span>Số lượng hiển thị: </span>
+        <select id="select-pagesize">
+            <option value="10" selected>10</option>
+            <option value="15">15</option>
+            <option value="20">20</option>
+        </select>
+    </div>
+</div>
+
+<form class="table-admin"  action="@Url.Action("ListAllUser","AdminApi", FormMethod.Post)">
+    <div class="table">
+        <div class="row clear-margin-right">
+            <div class="col-md-1 text-center border-cell">
+                #
+            </div>
+            <div class="col-md-3 text-center border-cell">
+                Họ tên
+            </div>
+            <div class="col-md-2 text-center border-cell">
+                Số điện thoại
+            </div>
+            <div class="col-md-3 text-center border-cell">
+                Email
+            </div>
+            <div class="col-md-1 text-center border-cell">
+                Quyền
+            </div>
+            <div class="col-md-2 border-cell">
+                Tác vụ
+            </div>
+        </div>
+        <div class="table-content">
+        </div>
+    </div>
+</form>
+<div class="paging-admin">
+    <ul class="paging">
+        <li onclick="ShowUserDataPage(1, this)"> Đầu </li>
+        <li class="non-actived" onclick="ShowUserDataPage(1, this)"> 1 </li>
+        <li class="non-actived" onclick="ShowUserDataPage(2, this)"> 2 </li>
+        <li class="non-actived" onclick="ShowUserDataPage(3, this)"> 3 </li>
+        <li onclick="ShowUserDataPage(3, this)"> Cuối </li>
+    </ul>
+</div>
+<script>
+    $(document).ready(function (e) {
+        var elementPagingItem = $('.paging').children("li")[1];
+        ShowUserDataPage(1, elementPagingItem);
+    })
+</script>

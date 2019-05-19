@@ -1,0 +1,9 @@
+E:\Freelancer\Project\code\AdminTool\Foundation\Extension\AdminToolExtension\bin\Debug\netstandard2.0\AdminToolExtension.deps.json
+E:\Freelancer\Project\code\AdminTool\Foundation\Extension\AdminToolExtension\bin\Debug\netstandard2.0\AdminToolExtension.dll
+E:\Freelancer\Project\code\AdminTool\Foundation\Extension\AdminToolExtension\bin\Debug\netstandard2.0\AdminToolExtension.pdb
+E:\Freelancer\Project\code\AdminTool\Foundation\Extension\AdminToolExtension\obj\Debug\netstandard2.0\AdminToolExtension.csprojAssemblyReference.cache
+E:\Freelancer\Project\code\AdminTool\Foundation\Extension\AdminToolExtension\obj\Debug\netstandard2.0\AdminToolExtension.csproj.CoreCompileInputs.cache
+E:\Freelancer\Project\code\AdminTool\Foundation\Extension\AdminToolExtension\obj\Debug\netstandard2.0\AdminToolExtension.AssemblyInfoInputs.cache
+E:\Freelancer\Project\code\AdminTool\Foundation\Extension\AdminToolExtension\obj\Debug\netstandard2.0\AdminToolExtension.AssemblyInfo.cs
+E:\Freelancer\Project\code\AdminTool\Foundation\Extension\AdminToolExtension\obj\Debug\netstandard2.0\AdminToolExtension.dll
+E:\Freelancer\Project\code\AdminTool\Foundation\Extension\AdminToolExtension\obj\Debug\netstandard2.0\AdminToolExtension.pdb
